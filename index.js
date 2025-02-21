@@ -114,9 +114,29 @@ $(function () {
             let popoverContent = $("<div>").addClass("popover-content horizontal-list").dxDataGrid({
                 dataSource: transformedData,
                 columns: data.sections.map(s => ({
+                    headerCellTemplate: function(container, options){
+                        $("<div>")
+                        .text(options.column.caption.toUpperCase()) // Convert text to uppercase
+                        .css({
+                            "font-weight": "bold",
+                            "color": "#fff",   // White text
+                        })
+                        .appendTo(container);
+                    },
+                    cellTemplate: function(container, options){
+                        console.log(options);
+                        $("<div>")
+                        .text(options.text) // Convert text to uppercase
+                        .css({
+                            "font-weight": 450,
+                            "color": "#fff",   // White text
+                        })
+                        .appendTo(container);
+                    },
                     dataField: s.name,
                     caption: s.name,
                     allowSorting: false,
+                    alignment: "left",
                     encodeHtml: false
                 })),
 

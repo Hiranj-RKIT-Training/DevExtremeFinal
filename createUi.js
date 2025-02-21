@@ -1,7 +1,11 @@
 const CreateBox = (shoe) => {
     // creating shoe thumbmail
+    let imgDiv = document.createElement("div");
+    imgDiv.setAttribute("class", "imgDiv");
     let thumbmail = document.createElement("img");
     thumbmail.setAttribute('src', shoe.photo)
+    imgDiv.appendChild(thumbmail);
+
 
     // creating shoe title
     let shoeName = document.createElement('h5')
@@ -13,7 +17,7 @@ const CreateBox = (shoe) => {
     //appending in div and setting class Shoebox
     let shoeBox = document.createElement('div');
     shoeBox.classList.add("shoeBox");
-    shoeBox.appendChild(thumbmail);
+    shoeBox.appendChild(imgDiv);
     shoeBox.appendChild(shoeName);
     shoeBox.appendChild(shoePrice);
 

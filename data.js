@@ -1,16 +1,7 @@
 let MenuItems = {
     "data": {
         "menuCollection": [
-            {
-                "name": "Brands",
-                "type": "BRAND",
-                "textColor": null,
-                "link": {
-                    "url": "brands",
-                    "urlType": "BROWSE"
-                },
-                "sections": []
-            },
+           
             {
                 "name": "New",
                 "type": "CONFIGURED",
@@ -2656,26 +2647,6 @@ let MenuItems = {
                         ]
                     }
                 ]
-            },
-            {
-                "name": "Deals",
-                "type": "CONFIGURED",
-                "textColor": "",
-                "link": {
-                    "url": "/dp/deals",
-                    "urlType": "BROWSE"
-                },
-                "sections": []
-            },
-            {
-                "name": "Gift Cards",
-                "type": "GIFTCARD",
-                "textColor": null,
-                "link": {
-                    "url": "stockx-gift-card",
-                    "urlType": "PRODUCT"
-                },
-                "sections": []
             }
         ]
     }
