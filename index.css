@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.topBar {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+body {
+    background-color: black !important;
+}
+
+#logo {
+    height: 50px;
+
+}
+
+#loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1600;
+}
+
+#navBar {
+    height: 75px;
+    align-content: center;
+    /* border: white solid 1px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* position: fixed; */
+}
+
+#searchbar {
+    color: white;
+    background: #282825;
+    border: #5F5F5F solid 1px;
+    border-radius: 10px;
+    width: 50vw;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    height: 40px;
+}
+
+#loginButton,
+#logoutButton {
+    color: white;
+    border: white solid 1px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+#signupButton {
+    background: white;
+    color: black;
+    border: white solid 1px;
+    font-weight: 600;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+#navBar2 {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #282825;
+
+    /* position: fixed; */
+}
+
+.popover-item-class {
+    color: black;
+}
+
+.popover-list-class {
+    display: flex;
+    flex-direction: row;
+}
+
+.menuPopOver {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+
+    /* color: black !important;
+    background-color: white !important; */
+    width: 100rem !important;
+
+}
+
+#categoryMenu {
+    font-size: 18px;
+    font-weight: 600;
+    gap: 25px !important;
+}
+
+
+#shoesGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.brands {
+    padding-top: 135px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.brandsButton {
+    background: #000;
+    color: white;
+    border: white solid 1px;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.shoeBox {
+    flex-direction: column;
+    width: min-content;
+    min-width: 150px;
+    color: white;
+    margin: 10px;
+}
+
+img {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 100px;
+}
+
+.menu-item-class:hover {
+    text-decoration: underline;
+}
+
+#loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+#loginForm,
+#signupForm {
+    width: 100%;
+    max-width: 300px;
+}
+
+#newUserButton {
+    margin-top: 10px;
+}
+
+.dx-popup-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dx-popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

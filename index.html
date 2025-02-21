@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/21.1.3/css/dx.dark.css">
+    <script type="text/javascript" src="https://cdn3.devexpress.com/jslib/21.1.3/js/dx.all.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body class="dx-viewport">
+    <div class="topBar">
+        <div id="navBar">
+            <img src="./stockxLogo-removebg-preview.png" id="logo">
+            <input type="search" id="searchbar" placeholder="search for brand,color,etc.">
+            <div id="buttons">
+                <div id="loginButton"> </div>
+                <div id="signupButton"> </div>
+                <div id="logoutButton"> </div>
+            </div>
+        </div>
+        <div id='navBar2'>
+            <div id="categoryMenu"></div>
+        </div>
+    </div>
+    <!-- brands button -->
+    <div class="brands">
+        <button class="brandsButton" value="nike">Nike</button>
+        <button class="brandsButton" value="adiddas">Adiddas</button>
+        <button class="brandsButton" value="yeezys">Yeezys</button>
+        <button class="brandsButton" value="air-jordan">Air Jordan</button>
+        <button class="brandsButton" value="new-balance">New Balance</button>
+        <button class="brandsButton" value="swatch">Swatch</button>
+        <button class="brandsButton" value="supreme">Supreme</button>
+        <button class="brandsButton" value="acics">Asics</button>
+        <button class="brandsButton" value="lego">Lego</button>
+        <button class="brandsButton" value="crocs">Crocs</button>
+        <button class="brandsButton" value="puma">Puma</button>
+        <button class="brandsButton" value="off-white">OFF-WHITE</button>
+        <button class="brandsButton" value="balanciaga">Balanciaga</button>
+    </div>
+
+    <div id="shoesGrid">
+
+    </div>
+    <div id="loginPopup"></div>
+    <div id="signupPopup"></div>
+    <div id="loader"></div>
+</body>
+<script type="module" src="./index.js"></script>
+
+</html>
