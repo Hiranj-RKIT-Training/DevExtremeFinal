@@ -53,7 +53,6 @@ $(function () {
             // button.option("text", "Signup");
             if (isLoggedIn()) {
                 button.option("visible", false);
-
             }
 
         },

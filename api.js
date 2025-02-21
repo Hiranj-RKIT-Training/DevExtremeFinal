@@ -17,6 +17,12 @@ const headers = {
 
 
 let GetData = async (query = "trending") => {
+    if(!isLoggedIn()){
+    
+    //    await DevExpress.ui.notify("Login is Required", "error", 2000);
+        $("#loginPopup").dxPopup("instance").show();
+        return;
+    }
     // Clearing the Div
     document.getElementById('shoesGrid').innerHTML = "<div id = 'loader'></div>";
     console.log(query);
@@ -56,6 +62,13 @@ let GetData = async (query = "trending") => {
 
     });
 
+}
+let isLoggedIn = () => {
+    let user = localStorage.getItem("user");
+    if (user) {
+        return true;
+    }
+    return false;
 }
 let RemoveBrands = () => {
     $('.brandsButton').each(function () {
