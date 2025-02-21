@@ -179,3 +179,8 @@ img {
     flex-direction: column;
     align-items: center;
 }
+
+.seletedBrand {
+    background-color: white !important;
+    color: black !important;
+}

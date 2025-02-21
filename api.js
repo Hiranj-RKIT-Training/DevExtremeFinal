@@ -57,6 +57,11 @@ let GetData = async (query = "trending") => {
     });
 
 }
+let RemoveBrands = () => {
+    $('.brandsButton').each(function () {
+        $(this).removeClass("seletedBrand");
+    })
+}
 
 let GetBrand = (brand) => {
     //unselecting all buttons 
@@ -72,4 +77,4 @@ let GetBrand = (brand) => {
     GetData(brand.value);
 }
 
-export { GetData, GetBrand }
+export { GetData, GetBrand ,RemoveBrands }

@@ -1,5 +1,5 @@
 import { MenuItems } from "./data.js";
-import { GetData } from "./api.js";
+import { GetData, RemoveBrands  , GetBrand} from "./api.js";
 import { store } from "./customstore.js";
 console.log('connected');
 
@@ -40,6 +40,12 @@ $(function () {
     } else {
         // $("#loginPopup").dxPopup("instance").show();
     }
+
+    $(".brandsButton").on("click", function () {
+        let val = $(this).val();
+        console.log(val);
+        GetBrand(this);
+    });
     $('#loginButton').dxButton({
         text: 'Login',
         onContentReady: function (e) {
@@ -55,6 +61,10 @@ $(function () {
             loginPopup.show();
         }
     });
+    $("#searchbar").on("change", function () {
+        RemoveBrands();
+        GetBrand(this);
+    })
     $('#signupButton').dxButton({
         text: 'Signup',
         onContentReady: function (e) {
